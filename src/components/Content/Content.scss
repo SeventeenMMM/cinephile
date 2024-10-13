@@ -1,0 +1,50 @@
+.content {
+  margin-top: 140px;
+  h2 {
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    margin-left: 20px;
+  }
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 23px;
+    a {
+      width: 311px;
+      img {
+        width: 100%;
+        border-radius: 10px;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  gap: 30px;
+  button {
+    color: white;
+    background: #121111;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 25px;
+    transition: .5s;
+    border-radius: 20px;
+    &:hover{
+        color: #121111;
+        background: white;
+    }
+  }
+  span{
+    color: white;
+    font-size: 20px;
+  }
+}

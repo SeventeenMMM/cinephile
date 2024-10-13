@@ -1,0 +1,62 @@
+@import url(fonts.scss);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Raleway";
+  font-weight: 400;
+}
+.container {
+  max-width: 1350px;
+  width: 100%;
+  padding: 0 15px;
+  margin: auto;
+}
+
+body {
+  background: #141414;
+}
+
+.search {
+  margin-top: 140px;
+  input {
+border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    &::placeholder{
+      color: black
+    }
+  }
+  &__result {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    a {
+      width: 311px;
+      img {
+        width: 100%;
+        border-radius: 10px;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@import "components/Header/Header.scss";
+@import "components/Upcoming/Upcoming.scss";
+@import "components/TAM/TAM.scss";
+@import "components/ItemBlock/ItemBlock.scss";
+@import "components/TopRated/TopRated.scss";
+@import "components/Actors/Actors.scss";
+@import "components/Content/Content.scss";
+@import "components/Current/Current.scss";

@@ -1,0 +1,48 @@
+.media__info{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: .4s linear;
+    &.active{
+        height: 700px;
+        margin-top: 50px;
+    }
+    .close{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        cursor: pointer;
+    }
+    &-content{
+        height: 100%;
+        background: linear-gradient(90deg, #000 40%, rgba(0, 0, 0, 0.2) 63.85%, rgba(0, 0, 0, 0) 68.23%);
+        padding-left: 50px;
+        &-block{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            color: white;
+            gap: 30px;
+            h2{
+                font-size: 50px;
+                font-weight: 700;
+            }
+            p{
+                max-width: 935px;
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+        img{
+            position: absolute;
+            z-index: -1;
+            height: 100%;
+            width: 60%;
+            top: 0;
+            right: 0;
+            object-fit: cover;
+        }
+    }
+}
